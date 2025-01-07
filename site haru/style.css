@@ -1,0 +1,50 @@
+body {
+    font-family: 'Courier New', Courier, monospace; /* Mantém a fonte monoespaçada para garantir que as letras ocupem o mesmo espaço */
+    background-color: #f4f1e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.papel {
+    width: 500px;
+    height: 300px;
+    background-color: #f8f4e3;
+    border: 2px solid #d2b48c;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    position: relative;
+    font-size: 18px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: repeat(10, 30px); /* Define o número de linhas (10 linhas) */
+    background: linear-gradient(#f8f4e3 0%, #f8f4e3 90%, rgba(0, 0, 0, 0.1) 100%); /* Fundo com as linhas */
+    background-size: 100% 30px; /* A altura de cada linha será 30px */
+    background-repeat: repeat-y; /* Faz as linhas se repetirem */
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: auto;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6a4f4f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #5a3f3b;
+}
